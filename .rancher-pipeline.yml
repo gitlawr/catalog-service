@@ -4,3 +4,6 @@ stages:
   - runScriptConfig:
       image: busybox
       shellScript: echo hello
+  - runScriptConfig:
+      image: sdf
+      shellScript: ss
