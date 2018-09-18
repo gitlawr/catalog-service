@@ -7,5 +7,7 @@ stages:
         echo hello
         exit 1
 notification:
-  notifiers: pipelinetest
+  notifiers:
+  - pipelinetest
   condition: Failed
+  message: "not good"
