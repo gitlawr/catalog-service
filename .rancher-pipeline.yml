@@ -6,3 +6,6 @@ stages:
       shellScript: |-
         echo hello
         exit 1
+notification:
+  notifiers: pipelinetest
+  condition: Failed
