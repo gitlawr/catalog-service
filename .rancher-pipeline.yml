@@ -10,4 +10,3 @@ notification:
   notifiers:
   - pipelinetest
   condition: Failed
-  message: "not good"
