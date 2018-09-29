@@ -7,6 +7,9 @@ stages:
         echo hello
         exit 1
 notification:
-  notifiers:
-  - pipelinetest
-  condition: Failed
+  recipients:
+    - notifier: myslack
+      recipient: "#mon_demo"
+    - notifier: myslack
+  condition:
+  - Failed
